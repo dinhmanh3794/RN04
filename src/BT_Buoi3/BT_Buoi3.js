@@ -10,10 +10,14 @@ export default class BTBuoi3View extends Component {
           <View style={styles.yellowView} />
         </View>
         <View style={styles.footerView}>
-          <View style={styles.greenView} />
-          <View style={styles.greenView} />
-          <View style={styles.greenView} />
-          <View style={styles.greenView} />
+          <View style={{flex: 1}}>
+            <View style={styles.greenView} />
+            <View style={styles.greenView} />
+          </View>
+          <View style={{flex: 1}}>
+            <View style={styles.greenView} />
+            <View style={styles.greenView} />
+          </View>
         </View>
       </View>
     );
@@ -21,7 +25,7 @@ export default class BTBuoi3View extends Component {
 }
 
 const screenWidth = Dimensions.get("screen").width;
-
+const screenHeight = Dimensions.get("screen").height;
 const styles = StyleSheet.create({
   container: {
     flex: 1
@@ -51,10 +55,9 @@ const styles = StyleSheet.create({
     borderRadius: 15
   },
   greenView: {
+    flex: 1,
     backgroundColor: '#4f82c0',
     borderRadius: 15,
-    width: (screenWidth - 80)/2,
-    height: (screenWidth - 80)/2,
     margin: 20
   }
 });
