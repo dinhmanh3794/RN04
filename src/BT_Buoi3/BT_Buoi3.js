@@ -39,7 +39,6 @@ const styles = StyleSheet.create({
   },
   footerView: {
     flex: 1,
-    flexWrap: 'wrap',
     flexDirection: 'row',
     justifyContent: 'space-around',
     backgroundColor: '#c8c8fA',
