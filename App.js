@@ -1,9 +1,9 @@
 import React from "react";
-import BTBuoi3View from './src/BT_Buoi3/BT_Buoi3'
+import BT_Buoi5View from './src/BT_Buoi5/BT_Buoi5View'
 
 const App = () => {
   return(
-    <BTBuoi3View/>
+    <BT_Buoi5View/>
   );
 }
 
